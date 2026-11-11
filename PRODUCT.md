@@ -1,4 +1,4 @@
-# Product Thinking & Design Philosophy: Acadza AI "Report → Fix" Loop
+# Product.md
 
 ## 1. Who Loses the Most When a Question is Broken?
 **The honest, hardworking aspirant scoring in the 90th–98th percentile.**
