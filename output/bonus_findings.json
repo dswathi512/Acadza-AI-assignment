@@ -1,0 +1,56 @@
+[
+  {
+    "question_id": "68c9ae5afb6b2f16e2d43b1c",
+    "is_unreported": false,
+    "potential_issue": "Non-standard `<mspace linebreak=\"newline\">` elements used inside question options container.",
+    "evidence": "Non-standard MathML tag formatting found in option block. Renders on modern browsers but violates clean HTML5 structure.",
+    "confidence": 0.86,
+    "suggested_repair": "markup_leak",
+    "recommended_route": "faculty_review"
+  },
+  {
+    "question_id": "68dea87d387eea3d0d95fbe3",
+    "is_unreported": true,
+    "potential_issue": "Non-standard `<mspace linebreak=\"newline\">` elements used inside question options container.",
+    "evidence": "Non-standard MathML tag formatting found in option block. Renders on modern browsers but violates clean HTML5 structure.",
+    "confidence": 0.86,
+    "suggested_repair": "markup_leak",
+    "recommended_route": "faculty_review"
+  },
+  {
+    "question_id": "68dea87d387eea3d0d95fbe3",
+    "is_unreported": true,
+    "potential_issue": "Unreported question verified mathematically sound. Voltage-dependent capacitor charges to 5 V.",
+    "evidence": "Independent solve: αV² + V - 30 = 0 => (V+6)(V-5)=0 => V = 5 V (Option A). Stored answer A matches perfectly.",
+    "confidence": 0.98,
+    "suggested_repair": null,
+    "recommended_route": "no_change"
+  },
+  {
+    "question_id": "695ede2a88d7701e561aa9d9",
+    "is_unreported": true,
+    "potential_issue": "Unreported biology question verified sound. Dialysis holding measure vs supportive measure.",
+    "evidence": "Statement-I is correct (holding measure until transplant), Statement-II is incorrect (dialysis is supportive). Option D is verified correct.",
+    "confidence": 0.97,
+    "suggested_repair": null,
+    "recommended_route": "no_change"
+  },
+  {
+    "question_id": "68dea6e6387eea3d0d95f6f8",
+    "is_unreported": true,
+    "potential_issue": "Unreported optics question verified sound. Image size ratio β = ((D+x)/(D-x))² = 16.",
+    "evidence": "D = 150 cm, f = 24 cm => x = sqrt(150*(150-96)) = 90 cm. Ratio = (240/60)^2 = 16. Answer 16 is verified correct.",
+    "confidence": 0.99,
+    "suggested_repair": null,
+    "recommended_route": "no_change"
+  },
+  {
+    "question_id": "68c8153cfb6b2f16e2d3ceaf",
+    "is_unreported": false,
+    "potential_issue": "Non-standard `<mspace linebreak=\"newline\">` elements used inside question options container.",
+    "evidence": "Non-standard MathML tag formatting found in option block. Renders on modern browsers but violates clean HTML5 structure.",
+    "confidence": 0.86,
+    "suggested_repair": "markup_leak",
+    "recommended_route": "faculty_review"
+  }
+]

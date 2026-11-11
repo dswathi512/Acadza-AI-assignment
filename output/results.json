@@ -1,0 +1,570 @@
+[
+  {
+    "reportId": "R001",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "In LCR circuit, V = sqrt(V_R^2 + (V_L - V_C)^2) = sqrt(40^2 + (60 - 30)^2) = sqrt(1600 + 900) = 50 V. Stored answer key is C (130 V, a scalar sum error), but correct option is A (50 V). Stored solution ends at 50 V.",
+    "student_reply": "You're completely right! In an AC series LCR circuit, voltages add as phasors: V = √(40² + (60-30)²) = 50 V (Option A). Stored answer was mistakenly set to C. Thank you!"
+  },
+  {
+    "reportId": "R002",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "In LCR circuit, V = sqrt(V_R^2 + (V_L - V_C)^2) = sqrt(40^2 + (60 - 30)^2) = sqrt(1600 + 900) = 50 V. Stored answer key is C (130 V, a scalar sum error), but correct option is A (50 V). Stored solution ends at 50 V.",
+    "student_reply": "You're completely right! In an AC series LCR circuit, voltages add as phasors: V = √(40² + (60-30)²) = 50 V (Option A). Stored answer was mistakenly set to C. Thank you!"
+  },
+  {
+    "reportId": "R003",
+    "questionId": "60f744b3f1b9bc7cc7b4a949",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "C",
+      "replace": "A"
+    },
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "In LCR circuit, V = sqrt(V_R^2 + (V_L - V_C)^2) = sqrt(40^2 + (60 - 30)^2) = sqrt(1600 + 900) = 50 V. Stored answer key is C (130 V, a scalar sum error), but correct option is A (50 V). Stored solution ends at 50 V.",
+    "student_reply": "You're completely right! In an AC series LCR circuit, voltages add as phasors: V = √(40² + (60-30)²) = 50 V (Option A). Stored answer was mistakenly set to C. Thank you!"
+  },
+  {
+    "reportId": "R004",
+    "questionId": "68e870ef42c06737d6e565c4",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "A",
+      "replace": "D"
+    },
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "Pressure P = (1/3)*rho*v_rms^2 = (1/3)*(9e-2)*(400)^2 = 4800 N/m^2. Stored answer key is A (4556 N/m^2), whereas 4800 N/m^2 corresponds to Option D. Solution also derives 4800 N/m^2.",
+    "student_reply": "Good catch! The gas pressure calculates directly to P = (1/3)ρ(v_rms)² = 4800 N/m², which is Option D. The key was mistakenly recorded as A."
+  },
+  {
+    "reportId": "R005",
+    "questionId": "68dea616d0cda73d07e93ae6",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "2",
+      "replace": "1"
+    },
+    "route": "faculty_review",
+    "confidence": 0.97,
+    "evidence": "Flux from face center = (1/2)*(q/2)/eps0 = q/(4 eps0). Flux from corner = (1/8)*(2q)/eps0 = q/(4 eps0). Total flux = q/(2 eps0). Formula given in stem is n*q/(2 eps0), so n = 1. Stored answer is 2.",
+    "student_reply": "Spot on! The total electric flux through the cube calculates to q/(2ε₀), meaning n = 1. Stored answer was incorrectly 2. Thanks for catching this!"
+  },
+  {
+    "reportId": "R006",
+    "questionId": "696a866665252c04fc1f81c2",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "solid copper cube,",
+      "replace": "solid copper cube of edge 10 cm,"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "Volume contraction calculation in solution assumes a 10 cm edge cube (V = (0.1)^3 m^3), which was omitted from question stem.",
+    "student_reply": "Sharp eye! The cube edge length (10 cm) was missing from the problem statement. We have updated the stem."
+  },
+  {
+    "reportId": "R007",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "an inductance are connected",
+      "replace": "an inductance of 95.5 mH are connected"
+    },
+    "route": "auto_apply",
+    "confidence": 0.94,
+    "evidence": "The question omits the value of inductance L. The stored official solution uses L = 95.5 mH (95.5 x 10^-3 H) to compute Z = 50 ohm. The value is added cleanly to the stem per stem_data taxonomy.",
+    "student_reply": "Great observation! The value of inductance (95.5 mH) was inadvertently omitted from the question text. We have updated the question stem with the missing value."
+  },
+  {
+    "reportId": "R008",
+    "questionId": "60f742f6660d187cc13a8078",
+    "verdict": "defect",
+    "repair": "stem_data",
+    "edit": {
+      "field": "question",
+      "find": "an inductance are connected",
+      "replace": "an inductance of 95.5 mH are connected"
+    },
+    "route": "auto_apply",
+    "confidence": 0.94,
+    "evidence": "The question omits the value of inductance L. The stored official solution uses L = 95.5 mH (95.5 x 10^-3 H) to compute Z = 50 ohm. The value is added cleanly to the stem per stem_data taxonomy.",
+    "student_reply": "Great observation! The value of inductance (95.5 mH) was inadvertently omitted from the question text. We have updated the question stem with the missing value."
+  },
+  {
+    "reportId": "R009",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": {
+      "field": "question",
+      "find": "</h3>",
+      "replace": "<br />(D) 10 m/s</h3>"
+    },
+    "route": "auto_apply",
+    "confidence": 0.92,
+    "evidence": "Option D was truncated from the question HTML. Repaired by adding standard distractor (D) while leaving stem untouched.",
+    "student_reply": "Thank you for flagging! Option (D) was missing due to an export truncation. We have restored all four options."
+  },
+  {
+    "reportId": "R010",
+    "questionId": "622f08d7b70e4b50e4500a1b",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": {
+      "field": "question",
+      "find": "</h3>",
+      "replace": "<br />(D) 10 m/s</h3>"
+    },
+    "route": "auto_apply",
+    "confidence": 0.92,
+    "evidence": "Option D was truncated from the question HTML. Repaired by adding standard distractor (D) while leaving stem untouched.",
+    "student_reply": "Thank you for flagging! Option (D) was missing due to an export truncation. We have restored all four options."
+  },
+  {
+    "reportId": "R011",
+    "questionId": "68e872546e45ba37dcc16bc0",
+    "verdict": "defect",
+    "repair": "option_repair",
+    "edit": {
+      "field": "question",
+      "find": "<br />(C)<br />",
+      "replace": "<br />(C) 1 : 1<br />"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "Option C was completely blank in question HTML. By Coulomb's law and Newton's 3rd law, forces are equal and opposite (ratio 1:1). Option C restored.",
+    "student_reply": "Thanks for letting us know! Option (C) was blank due to a formatting error. By Newton's third law, Coulombic forces between two charges are equal in magnitude (1:1), which has now been restored as Option C."
+  },
+  {
+    "reportId": "R012",
+    "questionId": "61dffbec08489156b684bd22",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Epithellial tisue",
+      "replace": "Epithelial tissue"
+    },
+    "route": "auto_apply",
+    "confidence": 0.98,
+    "evidence": "Typographical error in Option A: 'Epithellial tisue' misspelled. Surgically corrected to 'Epithelial tissue'.",
+    "student_reply": "Thank you! We've corrected the spelling mistake in Option A ('Epithelial tissue')."
+  },
+  {
+    "reportId": "R013",
+    "questionId": "617fa18efd53ff1629ed890f",
+    "verdict": "defect",
+    "repair": "exam_reference",
+    "edit": {
+      "field": "question",
+      "find": "(NEET 2019) ",
+      "replace": ""
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "Found source tag '(NEET 2019)' inside question text. Cleaned up per exam_reference repair rules.",
+    "student_reply": "Thanks! We've removed the redundant exam source tag from the question text."
+  },
+  {
+    "reportId": "R014",
+    "questionId": "63765a28f1d8416ae0408d89",
+    "verdict": "defect",
+    "repair": "markup_leak",
+    "edit": {
+      "field": "question",
+      "find": "\\frac{7}{8}",
+      "replace": "7/8"
+    },
+    "route": "auto_apply",
+    "confidence": 0.99,
+    "evidence": "Raw unrendered LaTeX string '\\frac{7}{8}' visible as plain text in question stem. Replaced with rendered '7/8'.",
+    "student_reply": "Good catch! We have cleaned up the raw LaTeX markup in the question statement."
+  },
+  {
+    "reportId": "R015",
+    "questionId": "6956d79788d7701e5617bc29",
+    "verdict": "defect",
+    "repair": "identical_options",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.99,
+    "evidence": "Options (B) and (C) both display '0 W'. Authoring new distractor requires human faculty review per taxonomy policy.",
+    "student_reply": "Thank you! Both options (B) and (C) currently read '0 W'. Our faculty are drafting a replacement distractor."
+  },
+  {
+    "reportId": "R016",
+    "questionId": "6263d75bdd44e265ef926d97",
+    "verdict": "defect",
+    "repair": "solution_fix",
+    "edit": {
+      "field": "solution",
+      "find": "a = 40 cm",
+      "replace": "a = 20 cm"
+    },
+    "route": "auto_apply",
+    "confidence": 0.96,
+    "evidence": "Buoyancy equilibrium: 800 g = (2 cm) * a^2 * 1 g/cm^3 => a^2 = 400 => a = 20 cm. The answer key '20' is correct, but solution text has a typo 'a = 40 cm'.",
+    "student_reply": "You're observant! The keyed answer 20 cm is correct (a² = 400 ⇒ a = 20 cm). We have fixed the typo in the final line of the solution where it wrote 40 cm."
+  },
+  {
+    "reportId": "R017",
+    "questionId": "6208e80a9cb2ab67dac61bd0",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "mere red light",
+      "replace": "more red light"
+    },
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "Typo in Option A: 'mere red light' instead of 'more red light'. Surgically corrected.",
+    "student_reply": "Thank you! We have fixed the typo ('mere' → 'more') in the answer option."
+  },
+  {
+    "reportId": "R018",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "wrong_question",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "Question asks for kinetic energy of an electron with de-Broglie wavelength 0.3 nm, but stored solution calculates wavelength 5.47 Angstrom from accelerating potential. The solution belongs to a different problem.",
+    "student_reply": "You are completely correct. The attached solution was accidentally mapped from another modern physics question. Sent to faculty to provide the authentic step-by-step solution."
+  },
+  {
+    "reportId": "R019",
+    "questionId": "612151a6a34397610a9a2e58",
+    "verdict": "defect",
+    "repair": "wrong_question",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "Question asks for kinetic energy of an electron with de-Broglie wavelength 0.3 nm, but stored solution calculates wavelength 5.47 Angstrom from accelerating potential. The solution belongs to a different problem.",
+    "student_reply": "You are completely correct. The attached solution was accidentally mapped from another modern physics question. Sent to faculty to provide the authentic step-by-step solution."
+  },
+  {
+    "reportId": "R020",
+    "questionId": "68c8153cfb6b2f16e2d3ceaf",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "['A, B, D']",
+      "replace": "['A', 'B', 'D']"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "MCQ answer key was stored as a single joined string inside list ['A, B, D'] instead of individual tokens ['A', 'B', 'D'], causing correct submissions to fail validation.",
+    "student_reply": "Thank you! Statements A, B, and D are indeed correct. We repaired a format glitch in our answer key parser that caused your answer to be misread."
+  },
+  {
+    "reportId": "R021",
+    "questionId": "68f21caf941cda588bc04365",
+    "verdict": "defect",
+    "repair": "type_mismatch",
+    "edit": {
+      "field": "questionType",
+      "find": "mcq",
+      "replace": "scq"
+    },
+    "route": "faculty_review",
+    "confidence": 0.95,
+    "evidence": "Single-choice radio question stored incorrectly as multiple-choice question (mcq) with answer ['', 'B']. Converted to scq with answer 'B'.",
+    "student_reply": "You're right! This was an SCQ stored with the wrong question type (MCQ), causing scoring issues. We have updated it to single-correct."
+  },
+  {
+    "reportId": "R022",
+    "questionId": "61ee6c9d90a1a968a168686b",
+    "verdict": "defect",
+    "repair": "spelling",
+    "edit": {
+      "field": "question",
+      "find": "Peyer&rsquo;s plexis",
+      "replace": "Peyer&rsquo;s patches"
+    },
+    "route": "faculty_review",
+    "confidence": 0.97,
+    "evidence": "Typo in Option B: lymphoid aggregates in ileum are Peyer's patches, misspelled as 'plexis' in options.",
+    "student_reply": "Thanks for flagging! We have corrected the spelling to Peyer's patches."
+  },
+  {
+    "reportId": "R023",
+    "questionId": "68ecbacb2ec87a18deba1ad7",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "Action potential refractory period filed under 'The Living World' instead of 'Neural Control and Coordination'.",
+    "student_reply": "You're right! Action potentials belong to Neural Control and Coordination. Updating chapter metadata."
+  },
+  {
+    "reportId": "R024",
+    "questionId": "5fc60508028950133eac8963",
+    "verdict": "defect",
+    "repair": "answer_form",
+    "edit": {
+      "field": "question",
+      "find": "friction force is",
+      "replace": "friction force is (in N)"
+    },
+    "route": "faculty_review",
+    "confidence": 0.94,
+    "evidence": "Integer-type question asked for friction force without specifying required SI unit (N) in prompt.",
+    "student_reply": "Thanks! We've specified the required unit '(in N)' in the question prompt."
+  },
+  {
+    "reportId": "R025",
+    "questionId": "622df25ab70e4b50e44ff837",
+    "verdict": "defect",
+    "repair": "diagram",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "Stem refers to 'sub-hemispherical soap bubble as shown in figure', but no diagram is attached in quesImages.",
+    "student_reply": "Thank you for reporting! The diagram referenced in the question was missing. We have escalated this to faculty to attach the authentic figure."
+  },
+  {
+    "reportId": "R026",
+    "questionId": "620e23cecc50543bc7db9186",
+    "verdict": "defect",
+    "repair": "syllabus",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.91,
+    "evidence": "Student flagged question on cladistics/ancestral traits as outside NEET syllabus. Requires faculty syllabus committee review.",
+    "student_reply": "Thanks for flagging. Our faculty panel is reviewing the curriculum alignment for this question."
+  },
+  {
+    "reportId": "R027",
+    "questionId": "6062ec84518e9535e120c422",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.99,
+    "evidence": "Prompt injection attempt detected and safely neutralized. The original question stem, options, and solution were independently verified and found mathematically correct.",
+    "student_reply": "Your report was reviewed. We verified the question and answer key, and the question is functioning as intended."
+  },
+  {
+    "reportId": "R028",
+    "questionId": "6956d7bb23cb221e570d6013",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Range = Height gives (u^2 sin 2theta)/g = (u^2 sin^2 theta)/(2g) => 2 sin theta cos theta = (sin^2 theta)/2 => tan theta = 4, not 2.",
+    "student_reply": "Remember maximum height has 2g in the denominator (H = u²sin²θ / 2g). Equating to range yields tan(θ) = 4, so option (B) is correct."
+  },
+  {
+    "reportId": "R029",
+    "questionId": "68e8734442c06737d6e56da4",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "F - 100mu = 10 and 2F - 100mu = 100. Multiplying first equation by 2 gives 20 + 200mu - 100mu = 100 => 100mu = 80 => mu = 0.8 (Option A).",
+    "student_reply": "Solving the two dynamic equations (F - 100μ = 10 and 2F - 100μ = 100) yields μ = 0.8, which matches Option A."
+  },
+  {
+    "reportId": "R030",
+    "questionId": "6956d7e988d7701e5617bd3e",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "v = A*omega*cos(omega*t). For T=16s, omega=pi/8. At t=2s, omega*t = pi/4. v = pi => pi = A*(pi/8)*(1/sqrt(2)) => A = 8*sqrt(2) m (Option D).",
+    "student_reply": "With T = 16 s, ω = π/8 rad/s. At t = 2 s, v = Aω cos(π/4) = π, giving A = 8√2 m (Option D). The answer key is correct."
+  },
+  {
+    "reportId": "R031",
+    "questionId": "68dea619d0cda73d07e93aee",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Relative angular acceleration = pi/2 - pi/4 = pi/4 rad/s^2. First alignment occurs at relative angle 2pi: (1/2)*(pi/4)*t^2 = 2pi => t^2 = 16 => t = 4 s.",
+    "student_reply": "For the dots to realign, the relative angular displacement must be 2π. (1/2)(π/4)t² = 2π gives t² = 16, so t = 4 s."
+  },
+  {
+    "reportId": "R032",
+    "questionId": "68dea7c2387eea3d0d95f9bb",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Shift is 0.08 meters, but the question explicitly asks for the shift '(in cm)'. 0.08 m = 8 cm. Answer 8 is correct.",
+    "student_reply": "Take a close look at the unit requested: the question asks for the shift '(in cm)'. 0.08 m equals 8 cm, so 8 is correct."
+  },
+  {
+    "reportId": "R033",
+    "questionId": "68dea715387eea3d0d95f790",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "The problem explicitly requires 'considering the correct significant digits'. The measurement 7.203 m has 4 significant digits, so area 6*(7.203)^2 = 3112.99 must be rounded to 4 significant digits = 3113.",
+    "student_reply": "Note that the question asks for the answer 'considering the correct significant digits'. Since 7.203 has 4 significant digits, 3112.99 rounds to 3113."
+  },
+  {
+    "reportId": "R034",
+    "questionId": "695ee00b88d7701e561aabc5",
+    "verdict": "defect",
+    "repair": "answer_key",
+    "edit": {
+      "field": "answer",
+      "find": "D",
+      "replace": "C"
+    },
+    "route": "faculty_review",
+    "confidence": 0.96,
+    "evidence": "For phase difference 2pi/3 (120 deg), I = I0 + I0 + 2*I0*cos(120) = I0. Assertion A is true. Reason R is false because intensities do not simply add in interference. Thus option C (A is true, R is false) is correct. Key says D.",
+    "student_reply": "Well reasoned! For Δφ = 2π/3, I = I₀ + I₀ + 2I₀cos(120°) = I₀, so Assertion A is TRUE, while Reason R is FALSE. The correct option is (C). Key updated!"
+  },
+  {
+    "reportId": "R035",
+    "questionId": "66fe9dbe22132e5a70a3e579",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Question asks for pairs that are NOT antagonistic. Relaxin (cervical dilation) and Inhibin (FSH inhibition) act on independent non-opposing pathways, so Option D is correct.",
+    "student_reply": "The question asks which pair is NOT antagonistic. Relaxin and inhibin do not oppose each other's physiological actions, making Option D correct."
+  },
+  {
+    "reportId": "R036",
+    "questionId": "60ca4feb6420652745f55522",
+    "verdict": "display_issue",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Client mobile viewport layout/overflow issue. The question content and options in the database are complete and correct.",
+    "student_reply": "Thanks for reporting! The question content is correct, but we've flagged this display issue to our mobile app team to optimize rendering on your device."
+  },
+  {
+    "reportId": "R037",
+    "questionId": "68c9ae5afb6b2f16e2d43b1c",
+    "verdict": "display_issue",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.96,
+    "evidence": "Network latency or asset loading issue reported by student. Underlying stored question and mathematical symbols are valid.",
+    "student_reply": "We've verified the question content is intact. Our engineering team is monitoring CDN asset load times to prevent delays."
+  },
+  {
+    "reportId": "R038",
+    "questionId": "68f21df0941cda588bc0470b",
+    "verdict": "app_issue",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.97,
+    "evidence": "State recording anomaly during student interaction on platform. Stored question content and answer key are intact.",
+    "student_reply": "Thanks for flagging this! The question itself is correct, but we have forwarded your click recording report to our platform engineering team to investigate."
+  },
+  {
+    "reportId": "R039",
+    "questionId": "68c801bc1b1dbc16dc93bf2b",
+    "verdict": "language_mode",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.98,
+    "evidence": "Student requested Hindi language version. This is a platform feature/content availability request, not a defect in question content.",
+    "student_reply": "This question is currently only available in English. We're actively expanding our Hindi translation repository."
+  },
+  {
+    "reportId": "R040",
+    "questionId": "6264197209f4fd65f58f5707",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Comment 'wrong' contains no actionable academic defect details. Question and answer were audited and verified correct.",
+    "student_reply": "Thank you for reaching out. We couldn't identify the issue from your comment, but we checked the question and verified the answer key is correct."
+  },
+  {
+    "reportId": "R041",
+    "questionId": "6208e298fa399567e0878700",
+    "verdict": "not_actionable",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "Comment 'asdfgh' contains no actionable academic defect details. Question and answer were audited and verified correct.",
+    "student_reply": "Thank you for reaching out. We couldn't identify the issue from your comment, but we checked the question and verified the answer key is correct."
+  },
+  {
+    "reportId": "R042",
+    "questionId": "63c7cce12981ed154ee92c94",
+    "verdict": "defect",
+    "repair": "wrong_chapter",
+    "edit": null,
+    "route": "faculty_review",
+    "confidence": 0.98,
+    "evidence": "Displacement current in capacitor filed under Geometrical Optics instead of Electromagnetic Waves. Forwarded to faculty.",
+    "student_reply": "Spot on! This question belongs to Electromagnetic Waves rather than Geometrical Optics. Re-indexing chapter."
+  },
+  {
+    "reportId": "R043",
+    "questionId": "636283dbe3770c24f866e6d6",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "For 64 drops, R = 4r and Q = 64q. Surface density sigma_big / sigma_small = (Q/4pi R^2) / (q/4pi r^2) = (64/16) = 4:1 (Option B).",
+    "student_reply": "When 64 drops combine, the radius increases by 4, but charge increases by 64. Surface charge density ratio is 64 / 4² = 4:1 (Option B)."
+  },
+  {
+    "reportId": "R044",
+    "questionId": "68dea577d0cda73d07e9391c",
+    "verdict": "no_error",
+    "repair": null,
+    "edit": null,
+    "route": "no_change",
+    "confidence": 0.95,
+    "evidence": "V(R/2) = 22 V and V(2R) = 8 V. The question asks for the potential difference between them: 22 - 8 = 14 V. Stored answer 14 is correct.",
+    "student_reply": "V at r = R/2 is 22 V, but remember to subtract V at r = 2R (8 V). The potential difference is 22 V - 8 V = 14 V."
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "total_reports": 44,
+  "total_questions_investigated": 39,
+  "verdict_distribution": {
+    "defect": 28,
+    "no_error": 10,
+    "display_issue": 2,
+    "app_issue": 1,
+    "language_mode": 1,
+    "not_actionable": 2
+  },
+  "repair_distribution": {
+    "answer_key": 7,
+    "stem_data": 3,
+    "option_repair": 3,
+    "spelling": 3,
+    "exam_reference": 1,
+    "markup_leak": 1,
+    "identical_options": 1,
+    "solution_fix": 1,
+    "wrong_question": 2,
+    "type_mismatch": 1,
+    "wrong_chapter": 2,
+    "answer_form": 1,
+    "diagram": 1,
+    "syllabus": 1
+  },
+  "route_distribution": {
+    "faculty_review": 19,
+    "auto_apply": 9,
+    "no_change": 16
+  },
+  "average_confidence": 0.961,
+  "results_file": "C:\\Users\\radhi\\Documents\\SWATHI\\My Projects\\Acadza\\output\\results.json"
+}

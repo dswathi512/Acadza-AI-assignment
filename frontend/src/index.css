@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased font-sans;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* MathML and formatted text styling */
+math {
+  font-family: "Cambria Math", "Latin Modern Math", "STIX Two Math", serif;
+  font-size: 1.05em;
+  direction: ltr;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+math[display="block"] {
+  display: block;
+  margin: 0.75rem 0;
+  overflow-x: auto;
+}
+
+/* Safe rendering for rich HTML from dataset */
+.rendered-academic-content h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.rendered-academic-content p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.rendered-academic-content ol, .rendered-academic-content ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.rendered-academic-content sup, .rendered-academic-content sub {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.rendered-academic-content sup {
+  top: -0.5em;
+}
+
+.rendered-academic-content sub {
+  bottom: -0.25em;
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "totalChecks": 5,
+  "criticalErrors": 0,
+  "warnings": 0,
+  "issues": [],
+  "verifiedMetrics": {
+    "questionsLoaded": 43,
+    "reportsLoaded": 44,
+    "reportsMappedToQuestions": 44,
+    "unreportedQuestionsCount": 4
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "totalQuestions": 43,
+  "totalReports": 44,
+  "uniqueReportedQuestions": 39,
+  "unreportedQuestions": 4,
+  "unreportedQuestionIds": [
+    "68dea657387eea3d0d95f54a",
+    "68dea6e6387eea3d0d95f6f8",
+    "68dea87d387eea3d0d95fbe3",
+    "695ede2a88d7701e561aa9d9"
+  ],
+  "duplicateReportGroupsCount": 4,
+  "duplicateReportDetails": [
+    {
+      "questionId": "60f744b3f1b9bc7cc7b4a949",
+      "reportCount": 3,
+      "reportIds": [
+        "R002",
+        "R003",
+        "R001"
+      ],
+      "comments": [
+        "wrong ans",
+        "Sir root(40^2+30^2)=50 then why 130??",
+        "answer should be 50V. solution also says 50 but key is C"
+      ]
+    },
+    {
+      "questionId": "60f742f6660d187cc13a8078",
+      "reportCount": 2,
+      "reportIds": [
+        "R008",
+        "R007"
+      ],
+      "comments": [
+        "data missing",
+        "inductance ki value hi nahi di hai"
+      ]
+    },
+    {
+      "questionId": "622f08d7b70e4b50e4500a1b",
+      "reportCount": 2,
+      "reportIds": [
+        "R010",
+        "R009"
+      ],
+      "comments": [
+        "only 3 options showing",
+        "option D is missing"
+      ]
+    },
+    {
+      "questionId": "612151a6a34397610a9a2e58",
+      "reportCount": 2,
+      "reportIds": [
+        "R018",
+        "R019"
+      ],
+      "comments": [
+        "solution is of some other question",
+        "solution me 5.47 angstrom aa raha hai, question me kuch aur pucha hai"
+      ]
+    }
+  ],
+  "subjectDistribution": {
+    "Physics": 33,
+    "Zoology": 6,
+    "Botany": 4
+  },
+  "questionTypeDistribution": {
+    "scq": 31,
+    "integerQuestion": 10,
+    "mcq": 2
+  },
+  "levelDistribution": {
+    "EASY": 16,
+    "MEDIUM": 23,
+    "null": 1,
+    "HARD": 3
+  },
+  "reportSourceDistribution": {
+    "web": 9,
+    "android": 26,
+    "ios": 9
+  },
+  "taxonomyVerdictsCount": 7,
+  "taxonomyRepairsCount": 18
+}
