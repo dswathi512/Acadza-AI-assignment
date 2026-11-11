@@ -1,6 +1,11 @@
 import type { DashboardMetrics, ReportItem, ReportDetail, AuditRecord, BonusFinding } from '../types';
 
-const BASE_URL = '/api';
+const API_ORIGIN = (
+  import.meta.env.VITE_API_BASE_URL ||
+  'https://acadza-ai-assignment.onrender.com'
+).replace(/\/+$/, '');
+
+const BASE_URL = `${API_ORIGIN}/api`;
 
 export async function fetchHealth(): Promise<{ status: string; mode: string; llm_live: boolean }> {
   const res = await fetch(`${BASE_URL}/health`);
